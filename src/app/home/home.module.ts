@@ -7,6 +7,7 @@ import { HomeComponent } from './home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainsliderModule } from './mainslider/mainslider.module';
 import { BrandsliderModule } from './brandslider/brandslider.module';
+import { KategorilerModule } from './kategoriler/kategoriler.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BrandsliderModule } from './brandslider/brandslider.module';
     HomeRoutingModule,
     SwiperModule,
     MainsliderModule,
-    BrandsliderModule
+    BrandsliderModule,
+    KategorilerModule
   ]
 })
 export class HomeModule { }
