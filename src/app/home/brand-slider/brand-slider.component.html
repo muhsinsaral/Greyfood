@@ -1,0 +1,15 @@
+<div class="bg-white">
+    <swiper [config]="configBrand" class=" container">
+      <div class="swiper-wrapper d-flex align-items-center px-5">
+        <div *ngFor="let brand of brands" class="swiper-slide text-center">
+          <div class="d-flex align-items-center">
+            <img [src]="brand.imgUrl" />
+          </div>
+        </div>
+      </div>
+  
+      <img src="/assets\swiper_next.png" class="swiper-button-next" alt="" />
+      <img src="/assets\swiper_next.png" class="swiper-button-prev" alt="" />
+    </swiper>
+  </div>
+  

@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+    padding-top: 2rem;
+    .lang{
+        position: absolute;
+        top: 0;
+        right: 0;
+        &-opt{
+            cursor: pointer;
+        }
+    }
+}
