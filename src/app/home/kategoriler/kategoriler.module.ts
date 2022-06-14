@@ -28,7 +28,7 @@ import { WaferComponent } from './wafer/wafer.component';
     KategorilerRoutingModule
   ],
   exports: [
-    KategorilerComponent
+    KategorilerComponent,
   ]
 })
 export class KategorilerModule { }

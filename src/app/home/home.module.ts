@@ -22,6 +22,7 @@ import { KategorilerModule } from './kategoriler/kategoriler.module';
     MainsliderModule,
     BrandsliderModule,
     KategorilerModule
-  ]
+  ],
+  exports:[]
 })
 export class HomeModule { }
