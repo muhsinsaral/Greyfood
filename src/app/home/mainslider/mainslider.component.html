@@ -1,0 +1,21 @@
+<swiper [config]="config"  class="mt-3">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of Arr(num).fill(1)" class="swiper-slide text-center">
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="content col-md-8">
+            <img class="hero" src="/assets/hero-slider.png" alt="" />
+            <div
+              class="content-item col-md-5 d-flex flex-column align-items-center justify-content-center mt-5"
+            >
+              <img class="signIn" src="/assets/uye_olun.png" alt="" />
+              <p class="text-white fs-18 fw-medium px-5">
+                Kampanyalardan yararlanmak ve tüm ürünlerimizi görebilmek için
+                hemen üye olun!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination bg-light shadow text-secondary"></div>
+</swiper>

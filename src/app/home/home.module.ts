@@ -5,21 +5,21 @@ import { SwiperModule } from 'swiper/angular';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MainSliderComponent } from './main-slider/main-slider.component';
-import { BrandSliderComponent } from './brand-slider/brand-slider.component';
+import { MainsliderModule } from './mainslider/mainslider.module';
+import { BrandsliderModule } from './brandslider/brandslider.module';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     NavbarComponent,
-    MainSliderComponent,
-    BrandSliderComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SwiperModule
+    SwiperModule,
+    MainsliderModule,
+    BrandsliderModule
   ]
 })
 export class HomeModule { }
