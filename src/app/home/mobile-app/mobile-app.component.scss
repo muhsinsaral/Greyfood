@@ -1,10 +1,6 @@
 .app{
     background-color: white;
     position: relative;
-    height: 700px !important;
-    .img{
-        height: 700px;
-    }
     .content{
        margin: 7rem 0;
        padding-right: 20rem;
@@ -12,10 +8,5 @@
        .download{
         margin-bottom: 5rem;
        }
-       
-    }
-    
-    .app{
-        overflow: visible;
     }
 }

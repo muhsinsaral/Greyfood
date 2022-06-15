@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { KatalogComponent } from './katalog/katalog.component';
 import { BlogComponent } from './blog/blog.component';
 import { MobileAppComponent } from './mobile-app/mobile-app.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MobileAppComponent } from './mobile-app/mobile-app.component';
     KatalogComponent,
     BlogComponent,
     MobileAppComponent,
+    AdvantagesComponent,
   ],
   imports: [
     CommonModule,

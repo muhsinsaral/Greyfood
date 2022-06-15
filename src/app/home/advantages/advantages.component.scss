@@ -1,0 +1,19 @@
+.card{
+    border-radius: 2rem !important;
+    height: 490px;   
+    padding: 2rem 1rem;
+    width: 95%;
+    border: none;
+    margin: 5rem 0;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: lighten(gray,40%);
+        transform: scale(1.05);
+    }
+}
+
+.col-md-3{
+    padding: 0 1.8rem !important;
+    
+}
