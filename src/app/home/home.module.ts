@@ -8,12 +8,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainsliderModule } from './mainslider/mainslider.module';
 import { BrandsliderModule } from './brandslider/brandslider.module';
 import { KategorilerModule } from './kategoriler/kategoriler.module';
+import { KurumsalComponent } from './kurumsal/kurumsal.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     NavbarComponent,
+    KurumsalComponent,
   ],
   imports: [
     CommonModule,
@@ -21,7 +24,8 @@ import { KategorilerModule } from './kategoriler/kategoriler.module';
     SwiperModule,
     MainsliderModule,
     BrandsliderModule,
-    KategorilerModule
+    KategorilerModule,
+    SharedModule
   ],
   exports:[]
 })

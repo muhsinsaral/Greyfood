@@ -1,0 +1,42 @@
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  div {
+    transition: all 0.5s;
+
+    &:first-child {
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+      width: 12rem;
+      height: 5rem;
+      border-radius: 2.5rem 0 0 2.5rem;
+      font-size: 1.6rem;
+      background-color: var(--green);
+    }
+    &:last-child {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 0 2.5rem 2.5rem 0;
+      background-color: var(--darkGreen);
+      img {
+        transition: all 0.5s;
+      }
+    }
+  }
+  &:hover {
+    div {
+      color: black;
+      &:first-child {
+        background-color: var(--darkGreen);
+      }
+      &:last-child {
+        background-color: var(--green);
+      }
+    }
+    img {
+      filter: brightness(0%);
+    }
+  }
+}
