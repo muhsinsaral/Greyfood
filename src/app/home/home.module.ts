@@ -10,6 +10,9 @@ import { BrandsliderModule } from './brandslider/brandslider.module';
 import { KategorilerModule } from './kategoriler/kategoriler.module';
 import { KurumsalComponent } from './kurumsal/kurumsal.component';
 import { SharedModule } from '../shared/shared.module';
+import { KatalogComponent } from './katalog/katalog.component';
+import { BlogComponent } from './blog/blog.component';
+import { MobileAppComponent } from './mobile-app/mobile-app.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { SharedModule } from '../shared/shared.module';
     HomeComponent,
     NavbarComponent,
     KurumsalComponent,
+    KatalogComponent,
+    BlogComponent,
+    MobileAppComponent,
   ],
   imports: [
     CommonModule,
