@@ -10,6 +10,7 @@ import { CoffeeComponent } from './coffee/coffee.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { IceCreamComponent } from './ice-cream/ice-cream.component';
 import { WaferComponent } from './wafer/wafer.component';
+import { ProductComponent } from './product/product.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { WaferComponent } from './wafer/wafer.component';
     CoffeeComponent,
     DrinksComponent,
     IceCreamComponent,
-    WaferComponent
+    WaferComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,

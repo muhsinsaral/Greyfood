@@ -1,20 +1,24 @@
-li {
-  .icon {
-    filter: grayscale(100%);
-  }
-  &:hover {
-    span {
-      color: var(--green);
-    }
+.container {
+  background-color: #fff;
+  border-radius: 0 0 0 21px;
+  li {
     .icon {
-      filter: grayscale(0%);
+      filter: grayscale(100%);
     }
-  }
-  &:last-child{
-    background-color: var(--green);
-    border-radius: 0 0 0 21px;
-    span{
+    &:hover {
+      span {
+        color: var(--green);
+      }
+      .icon {
+        filter: grayscale(0%);
+      }
+    }
+    &:last-child {
+      background-color: var(--green);
+      border-radius: 0 0 0 21px;
+      span {
         color: white;
+      }
     }
   }
 }

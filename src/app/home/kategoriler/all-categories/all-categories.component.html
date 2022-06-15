@@ -1,1 +1,8 @@
-<p>all-categories works!</p>
+<div class="row px-4 py-3 justify-content-center align-items-center h-100">
+  <product
+    class="col-md-{{12/size!}} px-4"
+    *ngFor="let product of products"
+    [product]="product"
+  >
+  </product>
+</div>

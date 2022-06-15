@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriesService } from 'src/app/services/categories.service';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-kategoriler',
   templateUrl: './kategoriler.component.html',
-  styleUrls: ['./kategoriler.component.scss']
+  styleUrls: ['./kategoriler.component.scss'],
 })
 export class KategorilerComponent implements OnInit {
-  categories = [
-    {name:'Atıştırmalık',img:'/assets/kategoriler/snacks.png',routerLink:'/snacks'},
-    {name:'İçecekler',img:'/assets/kategoriler/drinks.png',routerLink:'/drinks'},
-    {name:'Gofret',img:'/assets/kategoriler/wafer.png',routerLink:'/wafer'},
-    {name:'Dondurma',img:'/assets/kategoriler/ice_cream.png',routerLink:'/ice-cream'},
-    {name:'Çikolata',img:'/assets/kategoriler/chocolate.png',routerLink:'/chocolate'},
-    {name:'Tüm Kategoriler',img:'/assets/kategoriler/all_categories.png',routerLink:'/all-categories'},
-  ]
-  constructor() { }
+  categories: any;
+  
+  constructor(private categoriesService: CategoriesService, private productService: ProductService) {}
 
   ngOnInit(): void {
+    this.getCategories()
+    
   }
-
+  getCategories(): void {
+    this.categories = this.categoriesService.getCategories();
+  }
+  
 }

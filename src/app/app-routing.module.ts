@@ -28,12 +28,12 @@ const routes: Routes = [
     path: '', component: HomeComponent,
     children: [
       {path:'all-categories',component:AllCategoriesComponent},
-      {path:'snacks',component:SnacksComponent},
-      {path:'drinks',component:DrinksComponent},
-      {path:'wafer',component:WaferComponent},
-      {path:'ice-cream',component:IceCreamComponent},
-      {path:'chocolate',component:ChocolateComponent},
-      {path:'coffee',component:CoffeeComponent},
+      {path:'snacks',component:AllCategoriesComponent},
+      {path:'drinks',component:AllCategoriesComponent},
+      {path:'wafer',component:AllCategoriesComponent},
+      {path:'ice-cream',component:AllCategoriesComponent},
+      {path:'chocolate',component:AllCategoriesComponent},
+      {path:'coffee',component:AllCategoriesComponent},
     ]  
   },
   // {path:'**',component:NotFoundComponent},
