@@ -1,0 +1,13 @@
+.contact{
+    a:hover{
+        color: var(--green) !important;
+        font-weight: 600;
+    }
+    .message {
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+}

@@ -14,6 +14,8 @@ import { KatalogComponent } from './katalog/katalog.component';
 import { BlogComponent } from './blog/blog.component';
 import { MobileAppComponent } from './mobile-app/mobile-app.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
     BlogComponent,
     MobileAppComponent,
     AdvantagesComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,

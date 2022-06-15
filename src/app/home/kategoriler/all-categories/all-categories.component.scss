@@ -5,3 +5,8 @@ product{
         transform: scale(1.03);
     }
 }
+@media (max-width:768px){
+    product{
+      margin: 2rem 0 !important;
+    }
+  }

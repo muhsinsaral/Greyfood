@@ -1,12 +1,15 @@
-.app{
-    background-color: white;
-    position: relative;
-    .content{
-       margin: 7rem 0;
-       padding-right: 20rem;
-       transform: translateX(-5rem);
-       .download{
+.mobileApp {
+  background-color: white;
+  .row {
+    margin: 0;
+    padding: 0;
+    .content {
+      margin: 7rem 0;
+      padding-right: 20rem;
+      transform: translateX(-5rem);
+      .download {
         margin-bottom: 5rem;
-       }
+      }
     }
+  }
 }

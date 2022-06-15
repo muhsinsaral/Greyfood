@@ -33,7 +33,7 @@
             "styles": [
               "src/styles/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/swiper/swiper-bundle.css"
+              "node_modules/swiper/swiper-bundle.css",
             ],
             "scripts": [
               "node_modules/swiper/swiper-bundle.min.js"

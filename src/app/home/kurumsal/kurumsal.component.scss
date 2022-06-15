@@ -15,3 +15,13 @@
         }
     }
 }
+@media (max-width:768px){
+    .kurumsal{
+        height:auto;
+    }
+    article{
+      width: 100% !important;
+      margin: 0;
+      transform: translateX(-10rem);
+    }
+  }
