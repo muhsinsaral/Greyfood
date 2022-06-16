@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  mobile:boolean = false
+  constructor() {
+    if(window.innerWidth <= 991) this.mobile = true
+   }
 
   ngOnInit(): void {
+    window.onresize = () => this.mobile = window.innerWidth <= 991;
+    
   }
 
 }

@@ -2,23 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
-  selector: 'app-mainslider',
-  templateUrl: './mainslider.component.html',
-  styleUrls: ['./mainslider.component.scss']
+  selector: 'app-blog-slider',
+  templateUrl: './blog-slider.component.html',
+  styleUrls: ['./blog-slider.component.scss'],
 })
-export class MainsliderComponent implements OnInit {
-  Arr = Array;
-  num: number = 4;
+export class BlogSliderComponent implements OnInit {
   config: SwiperOptions = {
-    
     loop: true,
     pagination: {
       el: '.swiper-pagination', 
       clickable: true,
     },
-    centeredSlidesBounds: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     speed: 2000,
     autoplay: {
       delay:2000
@@ -29,9 +25,7 @@ export class MainsliderComponent implements OnInit {
       loadPrevNext: true,
     },
   }
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

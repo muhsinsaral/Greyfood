@@ -9,4 +9,19 @@
             cursor: pointer;
         }
     }
+    li:not(:last-child):hover span{
+        
+            color: var(--green);
+      
+    }
+}
+@media(max-width:992px){
+    ul{
+        justify-content: center !important;
+        align-items: center !important;
+        li{
+            margin: 0 !important;
+            
+        }
+    }
 }

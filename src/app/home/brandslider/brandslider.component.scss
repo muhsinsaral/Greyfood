@@ -17,4 +17,10 @@ swiper{
   .swiper-button-prev{
     transform:scale(.5) rotate(180deg);
   }
-  
+@media(max-width:768px){
+  swiper{
+    .brand{
+      width: 70%;
+    }
+  }
+}

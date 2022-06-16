@@ -15,7 +15,6 @@ export class AllCategoriesComponent implements OnInit {
     console.log(window.screen.width)
     if(window.screen.width <=1200) {
       this.size = 2
-      console.log(this.size)
     }
    }
 

@@ -3,6 +3,7 @@
   .row {
     margin: 0;
     padding: 0;
+    position: relative;
     .content {
       margin: 7rem 0;
       padding-right: 20rem;
@@ -11,5 +12,54 @@
         margin-bottom: 5rem;
       }
     }
+    .img {
+      background-image: url("/assets/qr_hero.png");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      img{
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .content {
+    transform: translateX(0) !important;
+  }
+}
+@media (max-width: 1200px) {
+  .content {
+    margin: 4rem 0 !important;
+    padding-right: 10rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .content {
+    margin: 2rem 0 !important;
+    padding-right: 5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    background-color: white;
+    padding:4rem 0 !important;
+    text-align: center;
+    .download{
+      justify-content: center;
+    }
+  }
+  .img{
+    img{
+      display: block !important;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .content{
+    padding: 0 2rem !important;
+  }
+  a img{
+    width: 80% !important;
   }
 }

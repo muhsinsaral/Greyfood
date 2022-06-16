@@ -4,7 +4,8 @@
 <app-kategoriler></app-kategoriler>
 <app-kurumsal></app-kurumsal>
 <app-katalog></app-katalog>
-<app-blog></app-blog>
+<app-blog *ngIf="!mobile"></app-blog>
+<app-blog-slider *ngIf="mobile"></app-blog-slider>
 <app-mobile-app></app-mobile-app>
 <app-advantages></app-advantages>
 <app-contact></app-contact>

@@ -15,3 +15,52 @@
         }
     }
 }
+@media(max-width:1400px){
+    .content{
+        margin-top: 25rem !important;
+        margin-right: 15rem !important;
+    }
+}
+@media(max-width:1200px){
+    .katalog{
+        height: 450px !important;
+    }
+    .content{
+        margin-top: 20rem !important;
+        margin-right: 10rem !important;
+    }
+}
+@media(max-width:992px){
+    .katalog{
+        height: 400px !important;
+    }
+    .content{
+        margin-top: 20rem !important;
+        margin-right: 10rem !important;
+    }
+}
+@media(max-width:768px){
+    .katalog{
+        height: 300px !important;
+    }
+    .content{
+        margin-top: 17rem !important;
+        margin-right: 0 !important;
+        width: 30% !important;
+    }
+}
+@media(max-width:496px){
+    .katalog{
+        height: 250px !important;
+        background-position: 20%  0%;
+    }
+    .content{
+        margin-top: 15rem !important;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 22rem !important;
+    }
+}

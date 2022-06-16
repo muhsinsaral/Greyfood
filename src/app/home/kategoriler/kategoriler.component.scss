@@ -21,9 +21,115 @@
       }
     }
   }
+  .secenekler{
+    border-right: 2px solid rgb(231, 231, 231);
+  }
+ 
+}
+.active{
+  color: var(--green);
+  position: relative;
+  span {
+    color: var(--green) !important;
+  }
+  .icon {
+    filter: grayscale(0%) !important;
+  }
+  .arrow{
+    height: 2rem;
+    width: 2rem;
+    transform: rotate(45deg) translate(38% , -50%);
+    border-top: 2px solid rgb(207, 207, 207);
+    border-right: 2px solid rgb(207, 207, 207);
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+@media (max-width:992px){
+  .secenekler{
+    width: 100%;
+    display: flex;
+    border-right: none !important;
+    ul{
+      flex-direction: row !important;
+      width: 100% !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      height: 14rem !important;
+      padding: 0 2rem !important;
+      border-bottom: 2px solid rgb(231, 231, 231) !important;
+      li{
+        width: 20%;
+        height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative;
+        &:last-child{
+          display: none !important;
+        }
+        &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+          border-right: 2px solid rgb(231, 231, 231);
+        }
+      }
+      a{
+        position:static;
+      }
+      .arrow{
+        top: auto !important;
+        right: auto !important;
+        bottom: -1.2rem !important;
+        left: 45%;
+        transform: rotate(135deg) ;
+      }
+    }
+  }
+  :host ::ng-deep {
+    app-all-categories ::ng-deep{
+      .product-container{
+        padding: 4rem 1.5rem !important;
+      }
+    }
+    product{
+      height: 200px !important;
+    
+     div div:first-child{
+      height: 50% !important;
+    }
+    .information{
+      .sepet{
+        width: 25% !important;
+      }
+      span{
+        font-size: 1.4rem !important;
+      }
+    }
+    ::ng-deep .tag{
+      width: 20% !important;
+    }
+    }
+    
+  }
+  .col-md-10{
+    width: 100% !important;
+  }
 }
 @media (max-width:768px){
   .secenekler{
-    display: none !important;
+    ul{
+      height: 6rem !important;
+      li{
+        .icon{
+          display: none;
+        }
+      }
+    }
+  }
+  :host ::ng-deep {
+    product{
+      width: 50% !important;
+    }
   }
 }

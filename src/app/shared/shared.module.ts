@@ -6,13 +6,13 @@ import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    ButtonComponent,
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ButtonComponent
+    ButtonComponent,
   ]
 })
 export class SharedModule { }

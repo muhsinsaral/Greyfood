@@ -1,11 +1,15 @@
 .card{
     border-radius: 2rem !important;
-    height: 550px;   
+    margin-right: 0 !important;
+    height: 450px;
     cursor: pointer;
 }
-.col-md-4{
+.col-md-8{
     padding: 0 1.8rem !important;
 }
 a{
     margin: 7rem 0;
-}   
+} 
+.swiper-wrapper{
+    padding: 7rem 0;
+}

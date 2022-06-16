@@ -18,6 +18,12 @@ export class BrandsliderComponent implements OnInit {
     { imgUrl: '/assets/markalar/duplo.png' },
     { imgUrl: '/assets/markalar/loacker.png' },
   ];
+
+  constructor() {
+  }
+
+  ngOnInit(): void { }
+  
   configBrand: SwiperOptions = {
     width: window.outerWidth,
     breakpointsBase: 'window',
@@ -39,8 +45,19 @@ export class BrandsliderComponent implements OnInit {
     lazy: {
       loadPrevNext: true,
     },
+    breakpoints: {
+      // when window width is >= 320px
+      0: {
+        slidesPerView: 5,
+      },
+      // when window width is >= 480px
+      992: {
+        slidesPerView: 8,
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 10,
+      }
+    }
   };
-  constructor() {}
-
-  ngOnInit(): void {}
 }

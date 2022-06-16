@@ -4,3 +4,17 @@ a{
 span{
     cursor: pointer;
 }
+@media(max-width:1400px){
+    .row{
+        ul{
+            padding: 0 !important;
+        }
+    }
+}
+@media(max-width:576px){
+    .row{
+        margin-right: 0 !important;
+        justify-content: center;
+        align-items: center;
+    }
+}

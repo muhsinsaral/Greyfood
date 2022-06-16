@@ -17,11 +17,26 @@
 }
 @media (max-width:768px){
     .kurumsal{
-        height:auto;
+        height:auto !important;
+    }
+    article{
+      width: 45% !important;
+      margin: 10rem 0 5rem 0 !important;
+    }
+  }
+  @media (max-width:576px){
+    .kurumsal{
+        background-image: none;
+        background-color: var(--lightGray);
     }
     article{
       width: 100% !important;
-      margin: 0;
-      transform: translateX(-10rem);
+      margin:   0 !important;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }

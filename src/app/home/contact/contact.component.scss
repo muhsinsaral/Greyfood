@@ -11,3 +11,29 @@
       }
     }
 }
+@media(max-width:768px){
+  .row{
+      justify-content: center !important;
+    .col-md-4{
+      text-align: center !important;
+      margin-top: 3rem;
+    }
+    .col-sm-4{
+      margin-top: 3rem;
+      align-items: center !important;
+    }
+  }
+}
+@media(max-width:576px){
+  .row{
+      justify-content: center !important;
+    .col-md-4{
+      text-align: center !important;
+      margin-top: 3rem;
+    }
+    .col-sm-5 , .col-sm-7{
+      width: 50% !important;
+      
+    }
+  }
+}

@@ -16,6 +16,7 @@ import { MobileAppComponent } from './mobile-app/mobile-app.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlogSliderModule } from './blog/blog-slider/blog-slider.module';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     MainsliderModule,
     BrandsliderModule,
     KategorilerModule,
-    SharedModule
+    SharedModule,
+    BlogSliderModule
   ],
   exports:[]
 })
